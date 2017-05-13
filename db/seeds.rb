@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 u = User.new
-u.email = "223344@qq.com"  #可以改成自己的email
+u.email = "112233@qq.com"  #可以改成自己的email
 
-u.password = "223344"   #最少要六码
+u.password = "112233"   #最少要六码
 
-u.password_confirmation = "223344"
+u.password_confirmation = "112233"
 
 u.is_admin = true
 u.save
