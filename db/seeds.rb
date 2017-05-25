@@ -24,3 +24,10 @@ Product.create!(title: "牛奶与面包",
                 quantity: 5,
                 image: open("https://ws3.sinaimg.cn/large/006tNc79gy1ffu8qiiz32j31kw2dce89.jpg")
                 )
+
+Product.create!(title: "A_01",
+                description: "A_01",
+                price: 1500,
+                quantity: 5,
+                image: open("http://oqccu0u8y.bkt.clouddn.com/A_01.jpg")
+                )
