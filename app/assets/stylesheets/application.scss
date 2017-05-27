@@ -19,18 +19,281 @@
  @import "font-awesome";
 
 
+//导航栏//
+.navbar-brandw {
+  float: left;
+  height: 50px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar-default {
+   background-color: transparent;  //背景颜色
 
+   border-color: transparent; //边框色
+
+   margin-bottom: 0; //底部 margin 不撑开距离
+ }
+.navbar-default .navbar-brand {
+ color: #EF6C00; //字体颜色
+
+ padding: 10px 35px; //上下10px，左右15px
+ line-height: 30px; //文字行高
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+ color: #FF6F00; //鼠标放置在链接上的文字颜色
+
+ background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
+}
+
+ .navbar-default .navbar-nav > li > a{
+   color: #EF6C00;
+
+ }
+
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+   color: #23a43b;
+
+   background-color: transparent;
+ }
+ .navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+   color: hsva(0,0%,100%,0);
+
+   background-color: #ffffff;
+
+ }
+
+ .navbar-default .navbar-nav > .open > a,
+ .navbar-default .navbar-nav > .open > a:focus,
+ .navbar-default .navbar-nav > .open > a:hover {
+   background-color: #FFE0B2;
+
+   color: #212121;
+
+ }
+
+ @media (min-width: 768px) {
+   .navbar {
+     border-radius: 0; //圆角为0
+   }
+ }
+
+
+
+
+//视频背景//
 .container-video {
   background-color: rgba(0, 0, 0, 0);
   min-height: 823px;
   overflow: hidden;
 }
 
-video.video {
+.embed-responsive-item {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -10;
     zoom: 1;
     height: 825px;
+}
+
+@media screen and (max-width: 1100px) {
+    #bg-1,#bg-2,#section-5 {
+        background-attachment:scroll
+    }
+
+    .collections-content-wrapper,.miy-content-wrapper,.ring-slider-content-wrapper,.social-content-wrapper {
+        position: static;
+        top: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: auto
+    }
+
+    #section-1.mobile-section {
+        height: 500px
+    }
+
+    .collections-content-wrapper h2 {
+        margin-bottom: 30px
+    }
+
+    .collections-content-wrapper ul {
+        width: 80%;
+        margin: auto
+    }
+
+    .collections-content-wrapper li img {
+        max-width: 90%
+    }
+
+    .social-content-box,.social-content-box.instagram {
+        margin: 0 auto 30px;
+        float: none;
+        height: auto;
+        width: 90%
+    }
+
+    .social-content-box .scroll-pane {
+        height: auto
+    }
+
+    #section-2 .bx-wrapper {
+        width: 90%!important;
+        height: auto!important
+    }
+
+    #hp-ring-slider,#section-2 .bx-viewport {
+        height: auto!important
+    }
+
+    #section-2 h2 {
+        font-size: 20px;
+        margin-bottom: 20px
+    }
+
+    .mini-store-locator h3 {
+        font-size: 12px;
+        margin-bottom: 7px
+    }
+
+    .cbp-fbscroller>nav {
+        display: none
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #section-1 {
+        background-image:url(../img/bg_01.jpg);
+        background-position: right bottom;
+        background-attachment: scroll
+    }
+
+    #section-1 .home-page-logo.logo-light {
+        background: url(../img/logo-light.png)
+    }
+
+    .iframe-wrapper,.miy-content-wrapper {
+        width: 100%
+    }
+
+    .iframe-wrapper {
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .home-page header .logo {
+        display:block
+    }
+
+    #section-1 .home-page-logo.logo-light {
+        display: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .side-links {
+        display:none
+    }
+
+    #bg-4,#section-wedding-bands,.collections-content-wrapper ul,.miy-rings-three,.miy-rings-two,.miy-rings-two.top {
+        display: block
+    }
+
+    .collections-content-wrapper ul li,.miy-rings-three li,.miy-rings-two li,.miy-rings-two.top li {
+        display: block;
+        border-right: none;
+        border-bottom: none
+    }
+
+    .miy-content-wrapper p {
+        font-size: 10px;
+        margin-bottom: 35px
+    }
+
+    .miy-rings-two .box {
+        width: 100%
+    }
+
+    .miy-rings-two .box.text-align-left,.miy-rings-two .box.text-align-right {
+        text-align: center;
+        margin: auto
+    }
+
+    .miy-rings-two .box.text-align-right .link-text {
+        padding-right: 0;
+        margin-top: 0
+    }
+
+    .miy-rings-two .box.text-align-left .link-text {
+        padding-left: 0;
+        margin-top: 0
+    }
+
+    #section-wedding-bands .column {
+        margin-bottom: 60px;
+        float: left;
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #section-1.mobile-section {
+        height:200px
+    }
+
+    .no-phone {
+        display: none
+    }
+
+    .iframe-wrapper.phone-only {
+        display: block
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #section-2 h2 {
+        font-size:15px;
+        margin-bottom: 10px
+    }
+
+    #hp-ring-slider,#section-2 .bx-viewport {
+        height: 360px!important
+    }
+
+    #section-2.mobile-section {
+        padding-bottom: 0
+    }
+
+    .mini-store-locator {
+        bottom: -31px
+    }
+
+    .bx-wrapper .bx-prev {
+        left: -37px
+    }
+
+    .bx-wrapper .bx-next {
+        right: -37px
+    }
+
+    #bg-1,#bg-2,#section-1,#section-5 {
+        background-attachment: inherit
+    }
+
+    #section-wedding-bands .column {
+        float: left;
+        width: 100%
+    }
+
+    .iframe-wrapper iframe {
+        height: 240px
+    }
 }
