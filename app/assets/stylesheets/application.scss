@@ -309,3 +309,29 @@
         height: 240px
     }
 }
+
+// 视频下的大图 //
+.landing-page-mid {
+    height: 534px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(http://oqccu0u8y.bkt.clouddn.com/hp-slide-ring-07.png)
+}
+
+.landing-page-mid .tagline {
+    text-align: center;
+    color: #7f8c8d;
+    letter-spacing: 0.1em;
+    font-size: 1.6em;
+    margin-top: 3.2em
+}
+
+.landing-page-mid .tagp {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin-top: 2.5em;
+    line-height: 2.5em;
+    letter-spacing: 0.18em
+}
