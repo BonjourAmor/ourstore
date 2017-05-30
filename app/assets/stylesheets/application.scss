@@ -99,9 +99,15 @@
 
 
 //视频背景//
-.container-video {
+.container-video-lg {
   background-color: rgba(0, 0, 0, 0);
-  min-height: 830px;
+  max-height: 825px;
+  overflow: hidden;
+}
+
+.container-video-md {
+  background-color: rgba(0, 0, 0, 0);
+  max-height: 700px;
   overflow: hidden;
 }
 
@@ -117,13 +123,13 @@
 
 
 
-.bg-1 {
-  height: 380px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top;
-
-  background-image: url(http://oqccu0u8y.bkt.clouddn.com/bg_03.jpg)
-}
+// .bg-1 {
+//   height: 380px;
+//   width: 100%;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-attachment: fixed;
+//   background-position: center top;
+//   background-image: url(http://oqccu0u8y.bkt.clouddn.com/bg_03.jpg);
+//
+// }
