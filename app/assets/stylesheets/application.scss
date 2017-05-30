@@ -101,237 +101,29 @@
 //视频背景//
 .container-video {
   background-color: rgba(0, 0, 0, 0);
-  min-height: 823px;
+  min-height: 830px;
   overflow: hidden;
 }
 
-.embed-responsive-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -10;
-    zoom: 1;
-    height: 825px;
-}
 
-@media screen and (max-width: 1100px) {
-    #bg-1,#bg-2,#section-5 {
-        background-attachment:scroll
-    }
 
-    .collections-content-wrapper,.miy-content-wrapper,.ring-slider-content-wrapper,.social-content-wrapper {
-        position: static;
-        top: 0;
-        left: 0;
-        margin: auto;
-        width: 100%;
-        height: auto
-    }
 
-    #section-1.mobile-section {
-        height: 500px
-    }
-
-    .collections-content-wrapper h2 {
-        margin-bottom: 30px
-    }
-
-    .collections-content-wrapper ul {
-        width: 80%;
-        margin: auto
-    }
-
-    .collections-content-wrapper li img {
-        max-width: 90%
-    }
-
-    .social-content-box,.social-content-box.instagram {
-        margin: 0 auto 30px;
-        float: none;
-        height: auto;
-        width: 90%
-    }
-
-    .social-content-box .scroll-pane {
-        height: auto
-    }
-
-    #section-2 .bx-wrapper {
-        width: 90%!important;
-        height: auto!important
-    }
-
-    #hp-ring-slider,#section-2 .bx-viewport {
-        height: auto!important
-    }
-
-    #section-2 h2 {
-        font-size: 20px;
-        margin-bottom: 20px
-    }
-
-    .mini-store-locator h3 {
-        font-size: 12px;
-        margin-bottom: 7px
-    }
-
-    .cbp-fbscroller>nav {
-        display: none
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #section-1 {
-        background-image:url(../img/bg_01.jpg);
-        background-position: right bottom;
-        background-attachment: scroll
-    }
-
-    #section-1 .home-page-logo.logo-light {
-        background: url(../img/logo-light.png)
-    }
-
-    .iframe-wrapper,.miy-content-wrapper {
-        width: 100%
-    }
-
-    .iframe-wrapper {
-        padding: 0
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .home-page header .logo {
-        display:block
-    }
-
-    #section-1 .home-page-logo.logo-light {
-        display: none
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .side-links {
-        display:none
-    }
-
-    #bg-4,#section-wedding-bands,.collections-content-wrapper ul,.miy-rings-three,.miy-rings-two,.miy-rings-two.top {
-        display: block
-    }
-
-    .collections-content-wrapper ul li,.miy-rings-three li,.miy-rings-two li,.miy-rings-two.top li {
-        display: block;
-        border-right: none;
-        border-bottom: none
-    }
-
-    .miy-content-wrapper p {
-        font-size: 10px;
-        margin-bottom: 35px
-    }
-
-    .miy-rings-two .box {
-        width: 100%
-    }
-
-    .miy-rings-two .box.text-align-left,.miy-rings-two .box.text-align-right {
-        text-align: center;
-        margin: auto
-    }
-
-    .miy-rings-two .box.text-align-right .link-text {
-        padding-right: 0;
-        margin-top: 0
-    }
-
-    .miy-rings-two .box.text-align-left .link-text {
-        padding-left: 0;
-        margin-top: 0
-    }
-
-    #section-wedding-bands .column {
-        margin-bottom: 60px;
-        float: left;
-        width: 50%
-    }
-}
-
-@media screen and (max-width: 599px) {
-    #section-1.mobile-section {
-        height:200px
-    }
-
-    .no-phone {
-        display: none
-    }
-
-    .iframe-wrapper.phone-only {
-        display: block
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #section-2 h2 {
-        font-size:15px;
-        margin-bottom: 10px
-    }
-
-    #hp-ring-slider,#section-2 .bx-viewport {
-        height: 360px!important
-    }
-
-    #section-2.mobile-section {
-        padding-bottom: 0
-    }
-
-    .mini-store-locator {
-        bottom: -31px
-    }
-
-    .bx-wrapper .bx-prev {
-        left: -37px
-    }
-
-    .bx-wrapper .bx-next {
-        right: -37px
-    }
-
-    #bg-1,#bg-2,#section-1,#section-5 {
-        background-attachment: inherit
-    }
-
-    #section-wedding-bands .column {
-        float: left;
-        width: 100%
-    }
-
-    .iframe-wrapper iframe {
-        height: 240px
-    }
-}
 
 // 视频下的大图 //
-.landing-page-mid {
-    height: 534px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url(http://oqccu0u8y.bkt.clouddn.com/hp-slide-ring-07.png)
+.bq-1 {
+
+  background:  center center no-repeat #EEDEC2;
 }
 
-.landing-page-mid .tagline {
-    text-align: center;
-    color: #7f8c8d;
-    letter-spacing: 0.1em;
-    font-size: 1.6em;
-    margin-top: 3.2em
-}
 
-.landing-page-mid .tagp {
-    text-align: center;
-    color: #666;
-    font-size: 1.2em;
-    margin-top: 2.5em;
-    line-height: 2.5em;
-    letter-spacing: 0.18em
+
+.bg-1 {
+  height: 380px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+
+  background-image: url(http://oqccu0u8y.bkt.clouddn.com/bg_03.jpg)
 }
