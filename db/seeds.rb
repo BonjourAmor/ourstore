@@ -18,100 +18,100 @@ else
   puts "Admin 已经建立过了，脚本跳过该步骤。"
 end
 
-Product.create!(title: "banner",
-                description: "banner",
-                price: 15,
+Product.create!(title: "jz-1",
+                description: "jz-1",
+                price: 8999,
                 quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%281%29.jpg")
+                image: open("http://oqccu0u8y.bkt.clouddn.com/jz-1.png")
                 )
 
-Product.create!(title: "A_01",
-                description: "A_01",
-                price: 1500,
+Product.create!(title: "jz-2",
+                description: "jz-2",
+                price: 6999,
                 quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/A_01.jpg")
+                image: open("http://oqccu0u8y.bkt.clouddn.com/jz-2.png")
                 )
 
-Product.create!(title: "B_01",
-                description: "B_01",
-                price: 1500,
+Product.create!(title: "手镯",
+                description: "手镯",
+                price: 16000,
                 quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/B_01.jpg")
+                image: open("http://oqccu0u8y.bkt.clouddn.com/%E6%89%8B%E9%95%AF.png")
                 )
 
-Product.create!(title: "C_01",
-                description: "C_01",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/C_01.jpg")
-                )
-
-Product.create!(title: "O25B0882",
-                description: "O25B0882",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/O25B0882.JPG")
-                )
-
-Product.create!(title: "SM6A2164 - 副本 (2)",
-                description: "SM6A2164 - 副本 (2)",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/SM6A2164%20-%20%E5%89%AF%E6%9C%AC%20%282%29.jpg")
-                )
-
-Product.create!(title: "SM6A2164 - 副本",
-                description: "SM6A2164 - 副本",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/SM6A2164%20-%20%E5%89%AF%E6%9C%AC.jpg")
-                )
-
-Product.create!(title: "SM6A2164 - 副本",
-                description: "SM6A2164 - 副本",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/SM6A2164%20-%20%E5%89%AF%E6%9C%AC.jpg")
-                )
-
-Product.create!(title: "大banner (1)",
-                description: "大banner (1)",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%A4%A7banner%20%281%29.jpg")
-                )
-
-Product.create!(title: "大banner (2)",
-                description: "大banner (2)",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%A4%A7banner%20%282%29.jpg")
-                )
-
-Product.create!(title: "小banner (1)",
-                description: "小banner (1)",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%281%29.jpg")
-                )
-
-Product.create!(title: "小banner (2)",
-                description: "小banner (2)",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%282%29.jpg")
-                )
-
-Product.create!(title: "小banner (3)",
-                description: "小banner (3)",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%283%29.jpg")
-                )
-
-Product.create!(title: "小banner (4)",
-                description: "小banner (4)",
-                price: 1500,
-                quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%284%29.jpg")
-                )
+# Product.create!(title: "C_01",
+#                 description: "C_01",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/C_01.jpg")
+#                 )
+#
+# Product.create!(title: "O25B0882",
+#                 description: "O25B0882",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/O25B0882.JPG")
+#                 )
+#
+# Product.create!(title: "SM6A2164 - 副本 (2)",
+#                 description: "SM6A2164 - 副本 (2)",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/SM6A2164%20-%20%E5%89%AF%E6%9C%AC%20%282%29.jpg")
+#                 )
+#
+# Product.create!(title: "SM6A2164 - 副本",
+#                 description: "SM6A2164 - 副本",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/SM6A2164%20-%20%E5%89%AF%E6%9C%AC.jpg")
+#                 )
+#
+# Product.create!(title: "SM6A2164 - 副本",
+#                 description: "SM6A2164 - 副本",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/SM6A2164%20-%20%E5%89%AF%E6%9C%AC.jpg")
+#                 )
+#
+# Product.create!(title: "大banner (1)",
+#                 description: "大banner (1)",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%A4%A7banner%20%281%29.jpg")
+#                 )
+#
+# Product.create!(title: "大banner (2)",
+#                 description: "大banner (2)",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%A4%A7banner%20%282%29.jpg")
+#                 )
+#
+# Product.create!(title: "小banner (1)",
+#                 description: "小banner (1)",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%281%29.jpg")
+#                 )
+#
+# Product.create!(title: "小banner (2)",
+#                 description: "小banner (2)",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%282%29.jpg")
+#                 )
+#
+# Product.create!(title: "小banner (3)",
+#                 description: "小banner (3)",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%283%29.jpg")
+#                 )
+#
+# Product.create!(title: "小banner (4)",
+#                 description: "小banner (4)",
+#                 price: 1500,
+#                 quantity: 5,
+#                 image: open("http://oqccu0u8y.bkt.clouddn.com/%E5%B0%8Fbanner%20%284%29.jpg")
+#                 )
