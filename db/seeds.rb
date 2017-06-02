@@ -18,23 +18,30 @@ else
   puts "Admin 已经建立过了，脚本跳过该步骤。"
 end
 
-Product.create!(title: "jz-1",
+Product.create!(title: "sp-1",
                 description: "jz-1",
                 price: 8999,
                 quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/jz-1.png")
+                image: open("http://oqccu0u8y.bkt.clouddn.com/sp-1.jpg")
                 )
 
-Product.create!(title: "jz-2",
+Product.create!(title: "sp-2",
                 description: "jz-2",
                 price: 6999,
                 quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/jz-2.png")
+                image: open("http://oqccu0u8y.bkt.clouddn.com/sp-2.jpg")
                 )
 
-Product.create!(title: "手镯",
-                description: "手镯",
+Product.create!(title: "sp-3",
+                description: "jz-3",
                 price: 16000,
                 quantity: 5,
-                image: open("http://oqccu0u8y.bkt.clouddn.com/%E6%89%8B%E9%95%AF.png")
+                image: open("http://oqccu0u8y.bkt.clouddn.com/sp-3.jpg")
+                )
+
+Product.create!(title: "sp-4",
+                description: "sp-4",
+                price: 16000,
+                quantity: 5,
+                image: open("http://oqccu0u8y.bkt.clouddn.com/sp-4.jpg")
                 )

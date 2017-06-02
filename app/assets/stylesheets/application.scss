@@ -19,18 +19,11 @@
  @import "font-awesome";
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
- .en-markup-crop-options {
-     top: 18px !important;
-     left: 50% !important;
-     margin-left: -100px !important;
-     width: 200px !important;
-     border: 2px rgba(255,255,255,.38) solid !important;
-     border-radius: 4px !important;
+ body {
+   padding-top: 40px;
  }
 
- .en-markup-crop-options div div:first-of-type {
-     margin-left: 0px !important;
- }
+
 //导航栏//
 
 .navbar-brand {
@@ -336,4 +329,14 @@ p {
 
 .login-help{
   font-size: 12px;
+}
+
+// product show //
+.product-box {
+  margin: 5px auto 30px;
+  position: relative;
+}
+.product-content img {
+  width: 80%;
+  margin: 7.5px auto 7.5px auto;
 }
