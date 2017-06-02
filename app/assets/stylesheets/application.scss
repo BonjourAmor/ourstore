@@ -19,19 +19,35 @@
  @import "font-awesome";
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
- body {
-   padding-top: 40px;
- }
+// 整体布局 //
+body {
+    height: 100%;
+    margin: 0;
+}
+html {
+    padding-bottom: 50px;
+    min-height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
 
 
 //导航栏//
 
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 20px 24px;
+
   font-size: 18px;
-  line-height: 20px;
+
 }
 
 .navbar-brand > img {
