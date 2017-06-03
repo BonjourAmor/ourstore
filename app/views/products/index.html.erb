@@ -1,27 +1,3 @@
-<!-- <div class="container-fluid">
-  <div class="row">
-      <div class="col-md-12 pb-1 ">
-        <img src="http://oqccu0u8y.bkt.clouddn.com/bg-glow-large.png" class="img-responsive" alt="lover" style="opacity:0.6;">
-      </div>
-  </div>
-</div>
-
-
-<div class="row">
-  <% @products.each do |product| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to product_path(product) do %>
-        <% if product.image.present? %>
-          <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-        <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-        <% end %>
-      <% end %>
-      <%= product.title %> ￥ <%= product.price %>
-    </div>
-  <% end %>
-</div> -->
-
 
   <div class="container">
     <div class="carousel-inner">
@@ -29,26 +5,7 @@
         <img src="http://oqccu0u8y.bkt.clouddn.com/20170300-rings_stackable-hero.jpg">
       </div>
     </div>
-    <!--排序下拉菜单-->
-    <!-- <div class="dropdown clearfix pull-right">
-      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        商品排序
-          <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
-        <li>
-          <%= link_to("上架时间", products_path ) %>
-        </li>
-        <li>
-          <%= link_to("价格", products_path(:order => "by_product_price")) %>
-        </li>
-        <li>
-            <%= link_to("人气", products_path(:order => "by_fans")) %>
-        </li>
 
-      </ul>
-   </div> -->
-   <!--end-->
     <div class="productList-wrap mt30 bc">
       <div class="row">
         <% @products.each do |product| %>
@@ -69,3 +26,84 @@
       </div>
     </div>
   </div>
+
+  <div class="container">
+  <div class="row">
+       <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default panel-card">
+              <div class="panel-heading">
+                  <img src="https://unsplash.imgix.net/12/barley.jpg?q=75&fm=jpg&s=f39de5ca1970a13dbe6af6c86b3c47ec" />
+              </div>
+              <div class="panel-figure">
+                  <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/73.jpg" />
+              </div>
+              <div class="panel-body">
+                  <h4 class="panel-header">Mary</h4>
+                  <small>XX公司人力资源总监</small>
+              </div>
+              <div class="panel-thumbnails">
+                <div class="row">
+                  <p>前行网做的非常棒，我就是在这里找到我的第一份工作的。</p>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default panel-card">
+              <div class="panel-heading">
+                  <img src="https://unsplash.imgix.net/41/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg?q=75&fm=jpg&s=a760fd82863937c841f4b3870cdef011" />
+              </div>
+              <div class="panel-figure">
+                  <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/josue/73.jpg" />
+              </div>
+              <div class="panel-body">
+                  <h4 class="panel-header">Leon</h4>
+                  <small>XX公司工程师</small>
+              </div>
+              <div class="panel-thumbnails">
+                  <div class="row">
+                      <p>我在前行网找到我现在呆的公司，发展前景和待遇我都很满意。</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default panel-card">
+              <div class="panel-heading">
+                  <img src="https://ununsplash.imgix.net/19/waves.JPG?q=75&fm=jpg&s=6f316bc8e1dc9887a7cebe0841096e99" />
+              </div>
+              <div class="panel-figure">
+                  <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mutlu82/73.jpg" />
+              </div>
+              <div class="panel-body">
+                  <h4 class="panel-header">John</h4>
+                  <small>XX公司业务代表</small>
+              </div>
+              <div class="panel-thumbnails">
+                  <div class="row">
+                    <p>这里有热心的师兄师姐提建议，让我找到了最适合自己的职业发展道路。</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+          <div class="panel panel-default panel-card">
+              <div class="panel-heading">
+                  <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&fm=jpg&s=b919d3158053cde8e9f0e37b4876c14f" />
+              </div>
+              <div class="panel-figure">
+                  <img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/nisaanjani/73.jpg" />
+              </div>
+              <div class="panel-body">
+                  <h4 class="panel-header">Mike</h4>
+                  <small>XX公司总监</small>
+              </div>
+              <div class="panel-thumbnails">
+                  <div class="row">
+                      <p>前行网的社区很活跃，我们很多同届的毕业生都喜欢在这里互相交流。</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
