@@ -12,6 +12,7 @@ Rails.application.routes.draw do
         post :return
       end
     end
+    resources :categories 
   end
 
   resources :products do
