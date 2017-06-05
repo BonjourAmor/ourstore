@@ -18,10 +18,6 @@ else
   puts "Admin 已经建立过了，脚本跳过该步骤。"
 end
 
-Category.create(name: "戒指")
-Category.create(name: "手镯")
-Category.create(name: "项链")
-
 
 Product.create!(
                 id: 1,
