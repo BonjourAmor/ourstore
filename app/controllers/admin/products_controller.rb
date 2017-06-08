@@ -20,30 +20,25 @@ class Admin::ProductsController < ApplicationController
     @categories = Category.all.map { |c| [c.name, c.id] }
   end
 
+
   def update
     @product = Product.find(params[:id])
-    @product.category_id = params[:category_id]
-    if @product.update(product_params)
-      redirect_to admin_products_path
-    else
-      render :edit
-    end
-
     if params[:photos] != nil
       @product.photos.destroy_all #need to destroy old pics first
 
       params[:photos]['avatar'].each do |a|
-        @picture = @product.photos.create(:acatar => a)
+        @picture = @product.photos.create(:avatar => a)
       end
-
-      @product.update(product_params)
-      redirect_to admin_products_path
-
-    elsif @product.update(product_params)
-      redirect_to admin_products_path
     else
       render :edit
     end
+
+    @product.category_id = params[:category_id]
+      if @product.update(product_params)
+        redirect_to admin_products_path
+      else
+        render :edit
+      end
   end
 
   def create

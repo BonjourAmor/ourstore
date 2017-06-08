@@ -93,3 +93,77 @@
   text-align:center;
   overflow: auto;
 }
+
+// 多图上传 //
+.show-page {
+    width: 1200px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.bc {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.clearfix {
+    display: block;
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.pr {
+    position: relative;
+}
+
+.intro-bigPic {
+    width: 420px;
+    height: 420px;
+}
+
+.intro-bigPic img {
+    width: 100%;
+}
+
+.intro-preview {
+    margin-top: 15px;
+    padding-left: 0px;
+}
+
+.border {
+    border: 1px solid #DDDDDD;
+}
+
+.magnifier-preview {
+    position: absolute;
+    width: 418px;
+    height: 420px;
+    left: 418px;
+    top: -1px;
+    padding: 0;
+    z-index: 1000;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.intro-preview .intro-preview-activeItem {
+    border-color: #DB3652;
+}
+
+.intro-preview .intro-preview-item img {
+  width: 70px;
+  height: 70px;
+}
+
+.intro  {
+    text-align: center;
+}
