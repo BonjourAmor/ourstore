@@ -31,7 +31,7 @@
                       <li class="border intro-preview-item fl ">
                    <% end %>
                    <% if index < 5 %>
-                    <%= image_tag p.avatar.medium.url%>
+                    <%= image_tag p.avatar.medium.url, rel: p.avatar.url%>
                    <% end %>
                      </li>
                 <% end %>
