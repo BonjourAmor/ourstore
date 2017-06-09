@@ -178,3 +178,25 @@
     margin-right: 13px;
     overflow: hidden;
 }
+
+/*-----放大镜显示部分-----*/
+div.zoomDiv {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  display: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.zoomMask {
+  position: absolute;
+  background: url("/images/mask.png") repeat scroll 0 0 transparent;
+  cursor: move;
+  z-index: 1;
+}
