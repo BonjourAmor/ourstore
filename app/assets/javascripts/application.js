@@ -18,9 +18,6 @@
 //= require bootstrap/modal
 //= require_tree .
 
-$('#myCollapsible').collapse({
-  toggle: false
-})
 
 (function ($) {
    $.fn.imagezoom = function (options) {

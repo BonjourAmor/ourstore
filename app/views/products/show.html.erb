@@ -1,11 +1,10 @@
-<div class="product-page product-box product-show">
-  <div class="wrapper background-blue">
-    <div class="header">
+
+
       <div class="container">
         <div class="row">
 
           <div class="show-page detail mt20 w1200 bc pb50">
-            <div class="intro clearfix">
+            <div class="intro">
             <div class="cover fl">
 
               <!-- 商品大图 --->
@@ -22,7 +21,7 @@
                   <% end %>
                 </div>
                 <!-- 商品小图 -->
-              <ul class="intro-preview clearfix">
+              <ul class="intro-preview">
                 <% if @photos.present? %>
                  <% @photos.each_with_index do |p, index| %>
                    <% if index == 0 %>
@@ -61,7 +60,7 @@
                   ￥
                   <%= @product.price %>
                 </div>
-                <div class="pull-right">
+                <div class="text-center">
                   <% if @product.quantity.present? && @product.quantity > 0 %>
                   <%= link_to("加入购物车", add_to_cart_product_path(@product), :method => :post, :class => "btn btn-primary btn-lg btn-danger") %>
                 <% else %>
@@ -72,9 +71,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+
+
 
   <script type="text/javascript">
   $(".jqzoom").imagezoom();     /* 绑定jqzoom class ，调用放大镜函数*/
