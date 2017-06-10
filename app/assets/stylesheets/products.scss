@@ -84,82 +84,117 @@
   border-bottom-color: transparent;
 }
 
-// 四行栏位 //
-.panel.panel-card {
+.product-info {
+  width: 60%;
+  height: 60%;
+  padding: 10px;
+  overflow: auto;
+  margin: auto;
+  text-align:center;
+  overflow: auto;
+}
+
+// 多图上传 //
+
+.show-page {
+    width: 1200px;
+}
+
+.show-page, .search-page {
+    width: 1200px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.bc {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.pr {
     position: relative;
-    height: 241px;
-    border: none;
+}
+
+.intro-bigPic {
+    width: 500px;
+
+}
+
+.intro-bigPic img {
+    width: 100%;
+}
+
+.intro-preview {
+    margin-top: 15px;
+    padding-left: 0px;
+}
+
+.border {
+    border: 1px solid #DDDDDD;
+}
+
+.magnifier-preview {
+    position: absolute;
+    width: 418px;
+    height: 420px;
+    left: 418px;
+    top: -1px;
+    padding: 0;
+    z-index: 1000;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.intro  {
+    text-align: center;
+}
+
+.intro-preview .intro-preview-activeItem {
+    border-color: #DB3652;
+}
+
+.intro-preview .intro-preview-item img {
+  width: 70px;
+  height: 70px;
+}
+
+.intro-preview .intro-preview-item {
+    padding: 1px;
+    margin-right: 13px;
     overflow: hidden;
 }
-.panel.panel-card .panel-heading {
-    position: relative;
-    z-index: 2;
-    height: 120px;
-    border-bottom-color: #fff;
-    overflow: hidden;
 
-    -webkit-transition: height 600ms ease-in-out;
-            transition: height 600ms ease-in-out;
-}
-.panel.panel-card .panel-heading img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    width: 120%;
-
-    -webkit-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
+/*-----放大镜显示部分-----*/
+div.zoomDiv {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  display: none;
+  text-align: center;
+  overflow: hidden;
 }
 
-.panel.panel-card .panel-figure {
-    position: absolute;
-    top: auto;
-    left: 50%;
-    z-index: 3;
-    width: 70px;
-    height: 70px;
-    background-color: #fff;
-    border-radius: 50%;
-    opacity: 1;
-    -webkit-box-shadow: 0 0 0 3px #fff;
-            box-shadow: 0 0 0 3px #fff;
-
-    -webkit-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
-
-    -webkit-transition: opacity 400ms ease-in-out;
-            transition: opacity 400ms ease-in-out;
-}
-
-.panel.panel-card .panel-body {
-    padding-top: 40px;
-    padding-bottom: 20px;
-
-    -webkit-transition: padding 400ms ease-in-out;
-            transition: padding 400ms ease-in-out;
-}
-
-.panel.panel-card .panel-thumbnails {
-    padding: 0 15px 20px;
-}
-
-
-.panel.panel-card:hover .panel-heading {
-    height: 55px;
-
-    -webkit-transition: height 400ms ease-in-out;
-            transition: height 400ms ease-in-out;
-}
-.panel.panel-card:hover .panel-figure {
-    opacity: 0;
-
-    -webkit-transition: opacity 400ms ease-in-out;
-            transition: opacity 400ms ease-in-out;
-}
-.panel.panel-card:hover .panel-body {
-    padding-top: 20px;
-
-    -webkit-transition: padding 400ms ease-in-out;
-            transition: padding 400ms ease-in-out;
+div.zoomMask {
+  position: absolute;
+  background: url("/images/mask.png") repeat scroll 0 0 transparent;
+  cursor: move;
+  z-index: 1;
 }

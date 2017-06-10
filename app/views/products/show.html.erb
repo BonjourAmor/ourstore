@@ -1,15 +1,46 @@
-<div class="product-page">
-  <div class="wrapper background-blue">
-    <div class="header">
+
+
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <% if @product.image.present? %>
-            <%= image_tag(@product.image.origin.url, class: "thumbnail") %>
-          <% else %>
-            <%= image_tag("http://placehold.it/720x540&text=No Pic", class: "thumbnail") %>
-            <% end %>
-          </div>
+
+          <div class="show-page detail mt20 w1200 bc pb50">
+            <div class="intro">
+            <div class="cover fl">
+
+              <!-- 商品大图 --->
+                <div class="intro-bigPic border pr">
+                  <div class="magnifier-preview border" id="preview"></div>
+                  <% if @photos.present? %>
+                    <a href=""><img
+                      id="thumb"
+                      src="<%= @photos.first.avatar.medium.url %>"
+                      data-large-img-wrapper="preview"
+                      data-large-img-url="<%= @photos.first.avatar.medium.url %>"
+                      rel="<%= @photos.first.avatar.medium.url %>"
+                      class="jqzoom"/></a>
+                  <% end %>
+                </div>
+                <!-- 商品小图 -->
+              <ul class="intro-preview">
+                <% if @photos.present? %>
+                 <% @photos.each_with_index do |p, index| %>
+                   <% if index == 0 %>
+                      <li class="border intro-preview-item intro-preview-activeItem fl">
+                   <% else %>
+                      <li class="border intro-preview-item fl ">
+                   <% end %>
+                   <% if index < 5 %>
+                    <%= image_tag p.avatar.medium.url, rel: p.avatar.url%>
+                   <% end %>
+                     </li>
+                <% end %>
+               <% end %>
+             </ul>
+           </div>
+         </div>
+       </div>
+
+
           <div class="col-md-5 col-md-offset-1">
             <div class="pay-area">
               <div class="text-center">
@@ -29,7 +60,7 @@
                   ￥
                   <%= @product.price %>
                 </div>
-                <div class="pull-right">
+                <div class="text-center">
                   <% if @product.quantity.present? && @product.quantity > 0 %>
                   <%= link_to("加入购物车", add_to_cart_product_path(@product), :method => :post, :class => "btn btn-primary btn-lg btn-danger") %>
                 <% else %>
@@ -40,6 +71,13 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+
+
+
+  <script type="text/javascript">
+  $(".jqzoom").imagezoom();     /* 绑定jqzoom class ，调用放大镜函数*/
+  $(".box li").mousemove(function () {   /* 绑定所有box calss 下的 li元素（标签） ,当鼠标触碰li时候执行下面的两个动作*/
+    $(".jqzoom").attr('src', $(this).find("img").attr("src"));  /* $(".jqzoom") 绑定元素，attr修改 这个元素src地址，修改为：$(this)这个表示鼠标触碰的这个元素，find往下搜索img标签，然后取src的地址*/
+    $(".jqzoom").attr('rel', $(this).find("img").attr("big"));/* $(".jqzoom") 绑定元素，attr修改 这个元素rel地址，修改为：$(this)这个表示鼠标触碰的这个元素，find往下搜索img标签，然后取big的地址*/
+  });
+</script>

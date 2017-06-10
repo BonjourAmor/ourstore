@@ -9,7 +9,7 @@
     <div class="productList-wrap mt30 bc">
       <div class="row">
         <% @products.each do |product| %>
-          <div class="col-xs-6 col-md-3 product-content">
+          <div class="col-xs-3 col-md-3 product-content">
             <%= link_to product_path(product) do %>
               <% if product.image.present? %>
                 <%= image_tag(product.image.thumb.url, class: "thumbnail wow pulse", data: {wow_delay: "2s" }) %>
@@ -26,10 +26,5 @@
       </div>
     </div>
   </div>
-
-
-  
-
-
   </div>
 </div>
